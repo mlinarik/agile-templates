@@ -37,7 +37,7 @@ body:
 
         Why does it matter?
     validations:
-      required: true
+      required: false
 
   - type: textarea
     id: current-state
@@ -47,7 +47,7 @@ body:
       placeholder: |
         Today...
     validations:
-      required: true
+      required: false
 
   - type: textarea
     id: desired-state
@@ -57,7 +57,7 @@ body:
       placeholder: |
         After this feature is delivered...
     validations:
-      required: true
+      required: false
 
   - type: textarea
     id: business-value
@@ -73,7 +73,7 @@ body:
         - Improves reliability
         - Supports a regulatory requirement
     validations:
-      required: true
+      required: false
 
   - type: textarea
     id: feature-statement
@@ -87,7 +87,7 @@ body:
 
         **So that** [business value / outcome]
     validations:
-      required: true
+      required: false
 
   - type: textarea
     id: stakeholders
@@ -101,7 +101,7 @@ body:
         Stakeholders:
         - ...
     validations:
-      required: true
+      required: false
 
   - type: textarea
     id: in-scope
@@ -113,7 +113,7 @@ body:
         - Capability 2
         - Capability 3
     validations:
-      required: true
+      required: false
 
   - type: textarea
     id: out-of-scope
@@ -138,7 +138,7 @@ body:
         - [ ] The solution provides...
         - [ ] The expected business outcome is achieved...
     validations:
-      required: true
+      required: false
 
   - type: textarea
     id: success-measures
@@ -151,7 +151,7 @@ body:
         Target:
         Measurement Method:
     validations:
-      required: true
+      required: false
 
   - type: textarea
     id: non-functional
