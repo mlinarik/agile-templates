@@ -1,0 +1,196 @@
+name: User Story
+description: Define a small, testable increment of product value suitable for Scrum delivery.
+title: "[Story]: "
+labels:
+  - "user-story"
+body:
+
+  - type: markdown
+    attributes:
+      value: |
+        ## User Story
+
+        A user story should describe a **valuable outcome from the user's perspective**.
+
+        A well-refined story should be small enough to complete within a Sprint,
+        independently testable, and have clear acceptance criteria.
+
+  - type: textarea
+    id: story
+    attributes:
+      label: User Story
+      description: Describe the capability from the perspective of the user or stakeholder.
+      value: |
+        **As a** [user / persona]
+
+        **I want** [capability]
+
+        **So that** [business value / outcome]
+    validations:
+      required: true
+
+  - type: textarea
+    id: context
+    attributes:
+      label: Context / Background
+      description: Explain why this story is needed and provide enough context for the Scrum Team to understand it.
+      placeholder: |
+        Describe the business or user context.
+
+        What problem does this story address?
+
+        Why is it important?
+    validations:
+      required: true
+
+  - type: textarea
+    id: acceptance-criteria
+    attributes:
+      label: Acceptance Criteria
+      description: Define observable and testable conditions that must be satisfied for the story to be accepted.
+      placeholder: |
+        - [ ] Given [initial context]
+              When [action occurs]
+              Then [expected outcome]
+
+        - [ ] Given [initial context]
+              When [action occurs]
+              Then [expected outcome]
+
+        - [ ] Given [initial context]
+              When [action occurs]
+              Then [expected outcome]
+    validations:
+      required: true
+
+  - type: textarea
+    id: business-rules
+    attributes:
+      label: Business Rules
+      description: Document any business rules that affect expected behavior.
+      placeholder: |
+        - Rule 1
+        - Rule 2
+        - Rule 3
+    validations:
+      required: false
+
+  - type: textarea
+    id: non-functional
+    attributes:
+      label: Non-Functional Requirements
+      description: Identify quality requirements specifically applicable to this story.
+      placeholder: |
+        Security:
+        - ...
+
+        Performance:
+        - ...
+
+        Accessibility:
+        - ...
+
+        Reliability:
+        - ...
+
+        Compliance:
+        - ...
+    validations:
+      required: false
+
+  - type: textarea
+    id: dependencies
+    attributes:
+      label: Dependencies
+      description: Identify anything that must be available or completed for this story.
+      placeholder: |
+        - Related story
+        - External service
+        - Team dependency
+        - Technical dependency
+    validations:
+      required: false
+
+  - type: textarea
+    id: assumptions
+    attributes:
+      label: Assumptions / Constraints
+      description: Document assumptions or known constraints that could affect implementation.
+      placeholder: |
+        Assumptions:
+        - ...
+
+        Constraints:
+        - ...
+    validations:
+      required: false
+
+  - type: textarea
+    id: design
+    attributes:
+      label: Design / Technical Notes
+      description: Add supporting technical information without prescribing implementation unless necessary.
+      placeholder: |
+        Architecture:
+        API:
+        UX / Design:
+        Data:
+        Technical Notes:
+    validations:
+      required: false
+
+  - type: textarea
+    id: testing
+    attributes:
+      label: Testing Considerations
+      description: Identify important functional, security, integration, regression, or edge-case testing considerations.
+      placeholder: |
+        Functional:
+        - ...
+
+        Negative / Edge Cases:
+        - ...
+
+        Security:
+        - ...
+
+        Integration:
+        - ...
+    validations:
+      required: false
+
+  - type: textarea
+    id: parent-feature
+    attributes:
+      label: Parent Feature
+      description: Link the Feature this story contributes to.
+      placeholder: |
+        #123
+    validations:
+      required: true
+
+  - type: checkboxes
+    id: refinement
+    attributes:
+      label: Story Refinement
+      description: Confirm the story is sufficiently refined before Sprint commitment.
+      options:
+        - label: The story provides clear user or business value.
+        - label: Acceptance criteria are clear and testable.
+        - label: Dependencies have been identified.
+        - label: The story is small enough to reasonably complete within a Sprint.
+        - label: The Scrum Team understands the expected outcome.
+
+  - type: textarea
+    id: additional-context
+    attributes:
+      label: Additional Context
+      description: Include mockups, diagrams, screenshots, documentation, or related issues.
+      placeholder: |
+        Related Issues:
+        Documentation:
+        Mockups:
+        Architecture:
+        Other References:
+    validations:
+      required: false
